@@ -1,22 +1,15 @@
-<!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
-  <div class="ui container">
-    <a class="active item">Accueil</a>
-    <a class="item">Apprendre</a>
-    <a class="item">A propos</a>
-
-    <div class="right menu">
-      <div class="item">
-        <a class="ui button">Livre</a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-  <a class="active item">Accueil</a>
-  <a class="item">Apprendre</a>
+  <a href="/" class="item">Accueil</a>
+  <div class="item">
+      <div class="header">Apprendre</div>
+      <div class="menu">
+        <a href="/diagnostic" class="item">Diagnostic</a>
+        <a class="item">Manifestations</a>
+        <a class="item">Réadaptation</a>
+        <a class="item">École</a>
+      </div>
+    </div>
   <a class="item">A propos</a>
   <a class="item">Livre</a>
 </div>
