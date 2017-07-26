@@ -497,7 +497,7 @@ a.slider-text {
   transition: .5s ease;
   background-color: #FBBD08;
 }
-.ui.yellow.button :hover {
+.ui.yellow.button:hover {
   background-color: #FBBD08;
   -webkit-box-shadow: 1px 2px 5px 1px rgba(34, 36, 38, 0.4);
           box-shadow: 1px 2px 5px 1px rgba(34, 36, 38, 0.4);
