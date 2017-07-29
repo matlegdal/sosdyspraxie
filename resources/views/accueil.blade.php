@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<div class="slider">
-		<a href="/" class="slider-text">
+		<a href="/diagnostic" class="slider-text">
 			<h3>Diagnostic</h3>
             <p>Comment dois-je interpréter le diagnostic de dyspraxie?</p>
             <button class="ui button yellow">Lire plus</button>
@@ -57,7 +57,7 @@
 				<p>La dyspraxie ou le Trouble de l'Acquisition de la Coordination (TAC) sont des <strong>diagnostics médicaux</strong>.</p>
 				<p>Ils signifient la présence chez l'enfant d'un trouble neurodéveloppemental qui affecte sa capacité à planifier, organiser et automatiser les gestes moteurs pour réaliser une action ou une activité.</p>
 				<p>On parle alors de <strong>dyspraxie motrice</strong>, de <strong>dyspraxie développementale</strong> ou de <strong>trouble de l'acquisition de la coordination</strong> (traduction du terme anglais Developemental Coordination Disorder ou DCD).</p>
-			<a class="ui large button">Lire plus</a>
+			<a href="/diagnostic" class="ui large yellow button">Lire plus</a>
 		</div>
 		<div class="eight wide column">
 			<h3 class="ui header">Comment reconnaître la dyspraxie?</h3>
