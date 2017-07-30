@@ -26,7 +26,7 @@
 			<p>Est-ce que mon enfant peut avoir des troubles praxiques sans avoir de diagnostic de dyspraxie?</p>
 			<button class="ui button yellow">Lire plus</button>
 		</a>
-		<a href="#" class="slider-text slider-hidden">
+		<a href="/manifestations" class="slider-text slider-hidden">
 			<h3>Manifestations</h3>
 			<p>Quelles sont les principales manifestations de la dyspraxie?</p>
 			<button class="ui button yellow">Lire plus</button>
@@ -68,7 +68,7 @@
 	            <li>de désorganisation</li>
 	            <li>d'un manque de fluidité des gestes</li>
 	        </ul>
-			<a class="ui large button">Lire plus</a>
+			<a href="/manifestations" class="ui large yellow button">Lire plus</a>
 		</div>
 	</div>
 	<div class="row">
@@ -78,7 +78,7 @@
 				<p>Si vous cherchez des réponses à vos questions sur la dyspraxie de votre enfant.</p>
 				<p>Le livre <strong>La Dyspraxie de l'enfant: vos Grandes Questions, nos Meilleures Réponses</strong> est une référence parfaite pour vous.</p>
 		
-			<a href="#" class="ui large button">En savoir plus sur le livre</a>
+			<a href="#" class="ui large yellow button">En savoir plus sur le livre</a>
 		</div>
 
 	</div>
