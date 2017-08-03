@@ -15,7 +15,7 @@
 @include('partials/top-menu')
 
 	<div class="pusher">
-		@yield('header')
+		@include('partials/masthead')
 		@yield('content')
 
 		@include('partials/footer')

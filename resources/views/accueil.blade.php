@@ -1,63 +1,24 @@
 @extends('partials/landing')
 
-
-
-@section('header')
-
-<div class="ui masthead center aligned segment">
-	
-	@include("partials/nav")
-
-	<div class="ui text container">
-		<div class="ui header">
-			<h1>Sos Dyspraxie</h1>
-			<p class="ui horizontal header divider">Pour mieux aider l'enfant dyspraxique</p>
-		</div>
-	</div>
-	<div class="slider">
-		<a href="/diagnostic" class="slider-text">
-			<h3>Diagnostic</h3>
-            <p>Comment dois-je interpréter le diagnostic de dyspraxie?</p>
-            <button class="ui button yellow">Lire plus</button>
-        </a>
-		
-		<a href="#" class="slider-text slider-hidden">
-			<h3>Sans diagnostic</h3>
-			<p>Est-ce que mon enfant peut avoir des troubles praxiques sans avoir de diagnostic de dyspraxie?</p>
-			<button class="ui button yellow">Lire plus</button>
-		</a>
-		<a href="/manifestations" class="slider-text slider-hidden">
-			<h3>Manifestations</h3>
-			<p>Quelles sont les principales manifestations de la dyspraxie?</p>
-			<button class="ui button yellow">Lire plus</button>
-		</a>
-		<a href="#" class="slider-text slider-hidden">
-			<h3>Réadaptation</h3>
-			<p>Mon enfant peut-il bénéfinicier de réadaptation?</p>
-			<button class="ui button yellow">Lire plus</button>
-        </a>
-		<a href="#" class="slider-text slider-hidden">
-			<h3>Parcours scolaire</h3>
-			<p>Quel sera le parcours scolaire de l'enfant dyspraxique?</p>
-			<button class="ui button yellow">Lire plus</button>
-		</a>
-	</div>
-</div>
-@endsection
-
-
-
 @section('content')
 
 
-<div class="ui internally celled stackable grid container">
+<div class="ui stackable grid container">
+	<div class="row">
+		@foreach ($articles as $article)
+			<div class="eight wide column">
+				<h3 class="ui header"> {{ $article->title }} </h3>
+				{{ $article->body }}
+			</div>
+		@endforeach
+	</div>
 	<div class="row">
 		<div class="eight wide column">
 			<h3 class="ui header">Qu'est-ce que la dyspraxie?</h3>
 				<p>La dyspraxie ou le Trouble de l'Acquisition de la Coordination (TAC) sont des <strong>diagnostics médicaux</strong>.</p>
 				<p>Ils signifient la présence chez l'enfant d'un trouble neurodéveloppemental qui affecte sa capacité à planifier, organiser et automatiser les gestes moteurs pour réaliser une action ou une activité.</p>
 				<p>On parle alors de <strong>dyspraxie motrice</strong>, de <strong>dyspraxie développementale</strong> ou de <strong>trouble de l'acquisition de la coordination</strong> (traduction du terme anglais Developemental Coordination Disorder ou DCD).</p>
-			<a href="/diagnostic" class="ui large yellow button">Lire plus</a>
+			<a href="/diagnostic" class="ui yellow button">Lire plus</a>
 		</div>
 		<div class="eight wide column">
 			<h3 class="ui header">Comment reconnaître la dyspraxie?</h3>
@@ -68,7 +29,7 @@
 	            <li>de désorganisation</li>
 	            <li>d'un manque de fluidité des gestes</li>
 	        </ul>
-			<a href="/manifestations" class="ui large yellow button">Lire plus</a>
+			<a href="/manifestations" class="ui yellow button">Lire plus</a>
 		</div>
 	</div>
 	<div class="row">
@@ -78,7 +39,7 @@
 				<p>Si vous cherchez des réponses à vos questions sur la dyspraxie de votre enfant.</p>
 				<p>Le livre <strong>La Dyspraxie de l'enfant: vos Grandes Questions, nos Meilleures Réponses</strong> est une référence parfaite pour vous.</p>
 		
-			<a href="#" class="ui large yellow button">En savoir plus sur le livre</a>
+			<a href="#" class="ui yellow button">En savoir plus sur le livre</a>
 		</div>
 
 	</div>

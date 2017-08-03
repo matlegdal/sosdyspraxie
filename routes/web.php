@@ -2,7 +2,9 @@
 
 
 Route::get('/', function () {
-    return view('accueil');
+	$articles = DB::table('articles')->get();
+	// return $text;
+    return view('accueil', compact('articles'));
 });
 
 Route::get('/diagnostic', function() {
@@ -12,3 +14,4 @@ Route::get('/diagnostic', function() {
 Route::get('/manifestations', function() {
 	return view('manifestations');
 });
+
