@@ -1,17 +1,11 @@
 <?php
 
 
-Route::get('/', function () {
-	$articles = DB::table('articles')->get();
-	// return $text;
-    return view('accueil', compact('articles'));
-});
+Route::get('/', 'ArticlesController@index');
 
-Route::get('/diagnostic', function() {
-	return view('diagnostic');
-});
+Route::get('/articles/create', 'ArticlesController@create');
 
-Route::get('/manifestations', function() {
-	return view('manifestations');
-});
+Route::post('/articles', 'ArticlesController@store');
+
+// Route::get('/articles/{article}', 'ArticlesController@show');
 

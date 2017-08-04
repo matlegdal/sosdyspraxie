@@ -1,4 +1,4 @@
-@extends('partials/landing')
+@extends('landing')
 
 @section('content')
 

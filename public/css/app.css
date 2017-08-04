@@ -538,8 +538,9 @@ a.slider-text {
 /*----------------------
         footer
 -----------------------*/
-.footer.segment {
-  padding: 5em 0em;
+footer.ui.footer.segment {
+  margin-top: 2em;
+  padding: 3em 0em;
 }
 /*----------------------
         small
