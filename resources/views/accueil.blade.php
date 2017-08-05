@@ -5,6 +5,10 @@
 
 <div class="ui stackable grid container">
 	<div class="row">
+		<a href="/articles" class="ui button">Voir tous les articles</a>
+		<a href="/articles/create" class="ui green button">Créer un nouvel article</a>
+	</div>
+	<div class="row">
 		@foreach ($articles as $article)
 			<div class="eight wide column">
 				<h3 class="ui header"> {{ $article->title }} </h3>
