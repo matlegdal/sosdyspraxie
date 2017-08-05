@@ -40,4 +40,16 @@ class ArticlesController extends Controller
         
         return redirect('/articles');
     }
+
+    public function update(Article $article)
+    {
+        $this->validate(request(), [
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        Article::find($article->id)->update(request(['title', 'body']));
+
+        return redirect('/articles');
+    }
 }
