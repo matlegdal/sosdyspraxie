@@ -23,6 +23,11 @@
 								<p>{{ $article->body }}</p>
 							</div>
 							<div class="extra">
+								<form action="/articles/{{ $article->id }}" method="POST">
+									{{ csrf_field() }}
+									{{ method_field('DELETE') }}
+									<button class="ui mini right floated red button" type="submit">Delete</button>
+								</form>
 								<a href="/articles/{{ $article->id }}/edit" class="ui mini right floated yellow button">Éditer</a>
 							</div>
 						</div>

@@ -52,4 +52,22 @@ class ArticlesController extends Controller
 
         return redirect('/articles');
     }
+
+    public function delete(Article $article)
+    {
+    
+        Article::find($article->id)->delete();
+
+        return redirect('/articles');
+    }
+
 }
+
+
+
+
+
+
+
+
+
