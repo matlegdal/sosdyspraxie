@@ -25,7 +25,8 @@ Route::delete('/articles/{article}', 'ArticlesController@delete');
 
 // Livre
 
-Route::get('/livre', function(){
-	// $comments = 
-	return view('livre');
-});
+Route::get('/livre', 'CommentController@index');
+
+Route::post('/livre', 'CommentController@store');
+
+Route::delete('/livre/{comment}', 'CommentController@delete');

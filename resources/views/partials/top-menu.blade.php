@@ -7,7 +7,7 @@
 
     <div class="right menu">
       <div class="item">
-        <a class="ui button">Livre</a>
+        <a href="/livre" class="ui yellow button">Livre</a>
       </div>
     </div>
   </div>

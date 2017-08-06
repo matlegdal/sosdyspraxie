@@ -10,7 +10,7 @@
 			<a href="#" class="item hoverable">A propos</a>
 			<div id="nav-right" class="right item">
 				<a href="#" class="item hoverable sticky"><i class="fa fa-shopping-cart"></i></a>
-				<a href="#" class="mini ui yellow button">Livre</a>
+				<a href="/livre" class="mini ui yellow button">Livre</a>
 				<a class="toc item"><i class="fa fa-book"></i></a>
 			</div>
 		</nav>
