@@ -43,7 +43,6 @@
 						</div>
 					@endforeach
 					  
-
 					<form class="ui reply form" action="/livre" method="POST">
 						{{ csrf_field() }}
 						<h3 class="ui dividing header">Donnez votre avis!</h3>
