@@ -20,7 +20,7 @@
 								<span class="date">Dernière modification {{ $article->updated_at->toFormattedDateString() }}</span>
 							</div>
 							<div class="description">
-								<p>{{ $article->body }}</p>
+								<p>{!! $article->body !!}</p>
 							</div>
 							<div class="extra">
 								<form action="/articles/{{ $article->id }}" method="POST">

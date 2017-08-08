@@ -12,7 +12,7 @@
 		@foreach ($articles as $article)
 			<div class="eight wide column">
 				<h3 class="ui header"> {{ $article->title }} </h3>
-				{{ $article->body }}
+				{!! $article->body !!}
 			</div>
 		@endforeach
 	</div>
@@ -43,7 +43,7 @@
 				<p>Si vous cherchez des réponses à vos questions sur la dyspraxie de votre enfant.</p>
 				<p>Le livre <strong>La Dyspraxie de l'enfant: vos Grandes Questions, nos Meilleures Réponses</strong> est une référence parfaite pour vous.</p>
 		
-			<a href="#" class="ui yellow button">En savoir plus sur le livre</a>
+			<a href="/livre" class="ui yellow button">En savoir plus sur le livre</a>
 		</div>
 
 	</div>

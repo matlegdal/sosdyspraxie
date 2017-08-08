@@ -18,10 +18,10 @@ class CommentController extends Controller
     {
         $this->validate(request(), [
                 'body' => 'required',
-                'user_id' => 'required'
+                'author' => 'required'
         ]);
 
-        Comment::create(request(['user_id', 'body']));
+        Comment::create(request(['author', 'body']));
         
         return redirect('/livre');
     }

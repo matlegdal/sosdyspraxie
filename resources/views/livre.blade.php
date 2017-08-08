@@ -23,7 +23,7 @@
 					@foreach ($comments as $comment)
 						<div class="comment">
 							<div class="content">
-								<a class="author">{{$comment->user_id}}</a>
+								<a class="author">{{$comment->author}}</a>
 								<div class="metadata">
 									<span class="date">{{$comment->created_at->diffForHumans()}}</span>
 								</div>
@@ -47,7 +47,7 @@
 						{{ csrf_field() }}
 						<h3 class="ui dividing header">Donnez votre avis!</h3>
 						<div class="field">
-							<input type="text" name="user_id" id="user_id" placeholder="Nom et prénom" required>
+							<input type="text" name="author" id="author" placeholder="Nom et prénom" required>
 						</div>
 						<div class="field">
 							<textarea id="body" name="body" placeholder="Écire un commentaire." required></textarea>
