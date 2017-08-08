@@ -63,7 +63,7 @@
 	<div class="row">
 		<div class="sixteen wide column">
 			<div class="ui attached icon message">
-				<i class="fa fa-3x fa-question-circle"></i>
+				<i class="info circle icon"></i>
 				<div class="content">
 					<h3 class="header">Démêler les termes</h3>
 				</div>

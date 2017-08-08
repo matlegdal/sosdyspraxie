@@ -3,15 +3,15 @@
 	<div class="ui container">
 		<nav class="ui huge secondary pointing menu">
 			<a class="toc item">
-				<i class="fa fa-bars"></i>
+				<i class="sidebar icon"></i>
 			</a>
 			<a href="/" class="active item hoverable">Accueil</a>
 			<a href="#" class="item hoverable">Apprendre</a>
 			<a href="#" class="item hoverable">A propos</a>
 			<div id="nav-right" class="right item">
-				<a href="#" class="item hoverable sticky"><i class="fa fa-shopping-cart"></i></a>
+				<a href="#" class="item hoverable sticky"><i class="shop icon"></i></a>
 				<a href="/livre" class="mini ui yellow button">Livre</a>
-				<a class="toc item"><i class="fa fa-book"></i></a>
+				<a class="toc item"><i class="book icon"></i></a>
 			</div>
 		</nav>
 	</div>

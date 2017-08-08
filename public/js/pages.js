@@ -89,7 +89,7 @@ __webpack_require__(6);
 $(document).ready(function () {
 
     // fix menu when passed
-    $('.masthead').visibility({
+    $('#nav').visibility({
         once: false,
         onBottomPassed: function onBottomPassed() {
             $('.fixed.menu').transition('fade in');
