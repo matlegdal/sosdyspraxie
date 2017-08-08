@@ -36,7 +36,7 @@ class ArticlesController extends Controller
                 'body' => 'required'
         ]);
 
-        Article::create(request(['title', 'body']));
+        Article::create(request(['title', 'body', 'category', 'link', 'image']));
         
         return redirect('/articles');
     }

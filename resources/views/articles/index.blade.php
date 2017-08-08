@@ -18,10 +18,21 @@
 							<div class="meta">
 								<span class="date">Créé le {{ $article->created_at->toFormattedDateString() }} - </span>
 								<span class="date">Dernière modification {{ $article->updated_at->toFormattedDateString() }}</span>
+								<div>Catégorie: {{ $article->category }}</div>
 							</div>
+
 							<div class="description">
-								<p>{!! $article->body !!}</p>
+								@if ($article->image)
+									<img class="ui small left floated rounded image" src="images/{{$article->image}}">
+								@endif
+
+								{!! $article->body !!}
+
+								@if ($article->link)
+									<a href="{{$article->link}}" class="ui yellow button">Lire plus</a>
+								@endif
 							</div>
+
 							<div class="extra">
 								<form action="/articles/{{ $article->id }}" method="POST">
 									{{ csrf_field() }}

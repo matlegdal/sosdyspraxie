@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="twelve wide column">
+			<div class="sixteen wide column">
 				<div class="ui comments">
 					<h3 class="ui dividing header">Commentaires</h3>
 					  

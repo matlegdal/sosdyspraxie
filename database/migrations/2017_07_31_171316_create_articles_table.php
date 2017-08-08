@@ -17,6 +17,9 @@ class CreateArticlesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('body');
+            $table->string('category')->default(NULL);
+            $table->string('image')->default(NULL)->nullable();
+            $table->string('link')->default(NULL)->nullable();
             $table->timestamps();
         });
     }

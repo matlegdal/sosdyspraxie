@@ -8,15 +8,26 @@
 		<a href="/articles" class="ui button">Voir tous les articles</a>
 		<a href="/articles/create" class="ui green button">Créer un nouvel article</a>
 	</div>
+
+
 	<div class="row">
 		@foreach ($articles as $article)
 			<div class="eight wide column">
 				<h3 class="ui header"> {{ $article->title }} </h3>
+				@if ($article->image)
+					<img class="ui small left floated rounded image" src="images/{{$article->image}}">
+				@endif
 				{!! $article->body !!}
+				@if ($article->link)
+					<a href="{{$article->link}}" class="ui yellow button">Lire plus</a>
+				@endif
+				
 			</div>
 		@endforeach
 	</div>
-	<div class="row">
+
+
+{{-- 	<div class="row">
 		<div class="eight wide column">
 			<h3 class="ui header">Qu'est-ce que la dyspraxie?</h3>
 				<p>La dyspraxie ou le Trouble de l'Acquisition de la Coordination (TAC) sont des <strong>diagnostics médicaux</strong>.</p>
@@ -42,11 +53,13 @@
 			<img class="ui small left floated rounded image" src="images/livre.jpg">
 				<p>Si vous cherchez des réponses à vos questions sur la dyspraxie de votre enfant.</p>
 				<p>Le livre <strong>La Dyspraxie de l'enfant: vos Grandes Questions, nos Meilleures Réponses</strong> est une référence parfaite pour vous.</p>
-		
 			<a href="/livre" class="ui yellow button">En savoir plus sur le livre</a>
 		</div>
+	</div> --}}
 
-	</div>
+
+
+
 	<div class="row">
 		<div class="sixteen wide column">
 			<div class="ui attached icon message">
