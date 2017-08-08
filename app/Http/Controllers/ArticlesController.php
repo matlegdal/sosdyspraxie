@@ -33,7 +33,8 @@ class ArticlesController extends Controller
     {
         $this->validate(request(), [
                 'title' => 'required',
-                'body' => 'required'
+                'body' => 'required',
+                'category' => 'required'
         ]);
 
         Article::create(request(['title', 'body', 'category', 'link', 'image']));
@@ -45,10 +46,11 @@ class ArticlesController extends Controller
     {
         $this->validate(request(), [
             'title' => 'required',
-            'body' => 'required'
+            'body' => 'required',
+            'category' => 'required'
         ]);
 
-        Article::find($article->id)->update(request(['title', 'body']));
+        Article::find($article->id)->update(request(['title', 'body', 'category', 'link', 'image']));
 
         return redirect('/articles');
     }

@@ -21,11 +21,12 @@
 		<div class="three fields">
 			<div class="required field">
 				<label>Catégorie</label>
-				<select name="category" id="category" class="ui fluid search dropdown">
+				<select name="category" id="category" class="ui fluid search dropdown" required>
 					<option value="">Catégorie</option>
 					<option value="diagnostic">Diagnostic</option>
 					<option value="manifestations">Manifestations</option>
 					<option value="ecole">École</option>
+					<option value="livre">Livre</option>
 				</select>
 				
 			</div>
