@@ -8,6 +8,7 @@
 	<title>Sos Dyspraxie</title>
 	
 	<link rel="stylesheet" type="text/css" href="../css/dist/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/app.css">
 </head>
 <body>
@@ -24,6 +25,7 @@
 	</div>
 
 	<script type="text/javascript" src="../js/lib/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 	<script type="text/javascript" src="../js/pages.js"></script>
 </body>
 </html>
