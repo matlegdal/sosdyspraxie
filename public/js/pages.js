@@ -60,44 +60,24 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */,
 /* 1 */,
 /* 2 */,
-/* 3 */,
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(4);
+
+
+/***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(5);
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// require('../semantic/dist/semantic.js');
-
-__webpack_require__(6);
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-
-    // fix menu when passed
-    $('#nav').visibility({
-        once: false,
-        onBottomPassed: function onBottomPassed() {
-            $('.fixed.menu').transition('fade in');
-        },
-        onBottomPassedReverse: function onBottomPassedReverse() {
-            $('.fixed.menu').transition('fade out');
-        }
-    });
 
     // create sidebar and attach to menu open
     $('.ui.sidebar').sidebar('attach events', '.toc.item');

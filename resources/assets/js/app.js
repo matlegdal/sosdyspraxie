@@ -23,5 +23,8 @@ $(document)
         autoplay: true,
         autoplaySpeed: 5000
     });
-
+    
+    // dropdown menu
+    $('.ui.dropdown').dropdown();
+    
 });

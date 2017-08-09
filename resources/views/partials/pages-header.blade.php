@@ -1,4 +1,4 @@
-	<nav id="nav" class="ui fixed secondary pointing menu wide">
+	<nav id="nav" class="ui fixed secondary pointing menu">
 		<a class="toc item">
 			<i class="sidebar icon"></i>
 		</a>

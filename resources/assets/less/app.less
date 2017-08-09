@@ -1,6 +1,6 @@
 // @import "../semantic/dist/semantic.min.css";
-// @import "../slick/slick.less";
-// @import "../slick/slick-theme.less";
+@import "../slick/slick.less";
+@import "../slick/slick-theme.less";
 
 body {
     background-color: #fbfbfb;
@@ -69,6 +69,14 @@ a.slider-text {
     bottom: 8px;
 }
 
+/*----------------------
+        Content
+-----------------------*/
+
+// #content {
+//     margin-top: 4em;
+// }
+
 
 /*----------------------
         Menu
@@ -77,7 +85,7 @@ a.slider-text {
 	border-bottom: 2px solid transparent;
 }
 
-.ui.secondary.pointing.menu.wide {
+.ui.secondary.pointing.menu {
     background-color: #01aff1;
     width: 100%;
     padding: 0.5em 3em 1.25em 3em;
@@ -126,7 +134,7 @@ a.slider-text {
         Top menu
 -----------------------*/
 
-.ui.large.top.fixed.menu {
+.ui.top.fixed.menu {
     background-color: #01aff1;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 }
@@ -135,7 +143,7 @@ a.slider-text {
     display: none;
 }
 
-.ui.large.top.fixed.menu .item {
+.ui.top.fixed.menu .item {
     color: #fff;
 }
 
@@ -151,6 +159,14 @@ a.slider-text {
 .ui.yellow.button:hover {
     background-color: #FBBD08;
     box-shadow: 1px 2px 5px 1px rgba(34, 36, 38, 0.4);
+}
+
+/*----------------------
+        Segment
+-----------------------*/
+
+.ui.attached.segment {
+    border: none;
 }
 
 

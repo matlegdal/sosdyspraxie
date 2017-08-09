@@ -18,8 +18,10 @@
 @include('partials/top-menu')
 
 	<div class="pusher">
-		@include('partials/pages-header')
-		@yield('content')
+	
+			@include('partials/pages-header')
+
+			@yield('content')
 
 		@include('partials/footer')
 
