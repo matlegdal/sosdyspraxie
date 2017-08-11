@@ -290,7 +290,8 @@ a.slider-text {
         Content
 -----------------------*/
 #content {
-  margin-top: 4em;
+  margin-top: 81px;
+  padding: 5em;
 }
 /*----------------------
         Menu
