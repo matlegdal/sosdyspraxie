@@ -10,7 +10,7 @@
 	<div class="row">
 
 			@foreach ($articles as $article)
-				<div class="eight wide column">
+				<div id="article-{{$article->id}}" class="eight wide column">
 						<div class="content">
 							<h3 class="header">
 								<a href="/articles/{{ $article->id }}">{{ $article->title }}</a>

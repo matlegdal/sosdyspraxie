@@ -12,7 +12,7 @@
 
 	<div class="row">
 		@foreach ($articles as $article)
-			<div class="eight wide column">
+			<div id="article-{{ $article->id }}" class="eight wide column">
 				<h3 class="ui header"> {{ $article->title }} </h3>
 				@if ($article->image)
 					<img class="ui small left floated rounded image" src="images/{{$article->image}}">

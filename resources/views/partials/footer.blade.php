@@ -11,16 +11,14 @@
 				</div>
 			</div>
 			<div class="three wide column">
-				<h4 class="ui inverted header">Services</h4>
+				<h4 class="ui inverted header">Administration</h4>
 				<div class="ui inverted link list">
-					<a href="#" class="item">lorem 1</a>
-					<a href="#" class="item">lorem 2</a>
-					<a href="#" class="item">lorem 3</a>
+					<a href="#" class="item">Login</a>
 				</div>
 			</div>
 			<div class="seven wide column">
-				<h4 class="ui inverted header">Footer Header</h4>
-				<p>Extra space</p>
+				<h4 class="ui inverted header">Sos Dyspraxie</h4>
+				<p>&copy; Sos Dyspraxie, Tous droits réservés.</p>
 			</div>
 		</div>
 	</div>
