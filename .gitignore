@@ -12,3 +12,4 @@ yarn-error.log
 .env
 /resources/assets/semantic
 /resources/assets/slick
+/backup
