@@ -5,7 +5,7 @@
     margin-top: 10vh;
     margin-bottom: 10vh;
     width: 100%;
-    min-height: 200px;
+    min-height: 250px;
 }
 
 .carousel-inner {
@@ -14,7 +14,7 @@
 }
 
 .carousel-content {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     height: 35vh;
     width: 75%;
     margin: auto;
@@ -41,15 +41,16 @@ h2 {
 
 
 #copyright {
-    font-size: 0.75em;
+    font-size: 0.75rem;
 }
 
 @media screen and (max-width: 450px){
     #titre {
-        display: none;
+        margin-top: 0;
     }
+    
 
     .carousel-content {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
