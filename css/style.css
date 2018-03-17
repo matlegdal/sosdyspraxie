@@ -25,12 +25,12 @@
 }
 
 section {
-    padding: 4em;
+    padding: 4rem;
 }
 
 
 h2 {
-    padding: 1em 0 1em 0;
+    padding: 0 0 3rem 0;
 }
 
 .quote {
@@ -48,7 +48,7 @@ h2 {
     #titre {
         margin-top: 0;
     }
-    
+
 
     .carousel-content {
         font-size: 1.2rem;
