@@ -1,6 +1,20 @@
 #titre {
     margin-top: 10vh;
 }
+
+/* .manuscrit {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Coming soon', cursive;
+    color: #ffc107;
+}
+
+.manuscrit-left {
+    position: relative;
+    top: 8vh;
+    margin-left: 3rem;
+} */
+
 #carouselQuestions {
     margin-top: 10vh;
     margin-bottom: 10vh;
