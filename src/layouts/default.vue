@@ -3,7 +3,7 @@
     <v-navigation-drawer
       :mini-variant.sync="miniVariant"
       :clipped="clipped"
-      v-model="drawer"
+      :value="sidebarIsOpen"
       fixed
       app
     >
@@ -28,7 +28,7 @@
       :clipped-left="clipped"
       fixed
       app>
-      <v-toolbar-side-icon @click="drawer = !drawer"/>
+      <v-toolbar-side-icon @click="toggleSidebar"/>
       <v-btn
         icon
         @click.stop="miniVariant = !miniVariant"
@@ -85,6 +85,8 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations } from 'vuex';
+
 export default {
   data() {
     return {
@@ -100,6 +102,16 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js',
     };
+  },
+  computed: {
+    ...mapGetters([
+      'sidebarIsOpen',
+    ]),
+  },
+  methods: {
+    ...mapMutations([
+      'toggleSidebar',
+    ]),
   },
 };
 </script>

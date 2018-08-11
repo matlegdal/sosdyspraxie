@@ -1,10 +1,15 @@
-export default {
-  state: () => ({
-    sidebar: false,
-  }),
+import Vuex from 'vuex';
+
+export default () => new Vuex.Store({
+  state: {
+    sidebarIsOpen: false,
+  },
+  getters: {
+    sidebarIsOpen: state => state.sidebarIsOpen,
+  },
   mutations: {
     toggleSidebar(state) {
-      state.sidebar = !state.sidebar;
+      state.sidebarIsOpen = !state.sidebarIsOpen;
     },
   },
-};
+});
