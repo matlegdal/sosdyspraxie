@@ -1,6 +1,6 @@
 # sosdyspraxie
 
-> Pour mieux aider l'enfant dyspraxique
+> sosdyspraxie project
 
 ## Build Setup
 

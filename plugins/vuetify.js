@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import {
   Vuetify,
   VApp,
@@ -9,8 +9,8 @@ import {
   VBtn,
   VIcon,
   VGrid,
-  VToolbar
-} from 'vuetify'
+  VToolbar,
+} from 'vuetify';
 
 Vue.use(Vuetify, {
   components: {
@@ -22,6 +22,6 @@ Vue.use(Vuetify, {
     VBtn,
     VIcon,
     VGrid,
-    VToolbar
-  }
-})
+    VToolbar,
+  },
+});
