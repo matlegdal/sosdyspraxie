@@ -8,9 +8,12 @@ import {
   VList,
   VBtn,
   VIcon,
+  VJumbotron,
   VGrid,
   VToolbar,
+  transitions,
 } from 'vuetify';
+import directives from 'vuetify/es5/directives';
 
 Vue.use(Vuetify, {
   components: {
@@ -21,7 +24,19 @@ Vue.use(Vuetify, {
     VList,
     VBtn,
     VIcon,
+    VJumbotron,
     VGrid,
     VToolbar,
+    transitions,
+  },
+  directives,
+  theme: {
+    primary: '#007bff',
+    secondary: '#6c757d',
+    accent: '#007bff',
+    error: '#FF1744',
+    info: '#2193F3',
+    success: '#4CAF50',
+    warning: '#FF9800',
   },
 });
