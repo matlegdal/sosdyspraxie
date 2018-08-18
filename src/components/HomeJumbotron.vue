@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-jumbotron(color="primary" dark style="height: calc(100vh - 72px);")
+  v-jumbotron(color="primary" dark style="height: calc(100vh - 96px);")
     v-container(fill-height)
       v-layout(align-center)
         v-flex(text-xs-center)

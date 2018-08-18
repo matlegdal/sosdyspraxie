@@ -2,6 +2,7 @@ import Vue from 'vue';
 import {
   Vuetify,
   VApp,
+  VAvatar,
   VCard,
   VNavigationDrawer,
   VFooter,
@@ -18,6 +19,7 @@ import directives from 'vuetify/es5/directives';
 Vue.use(Vuetify, {
   components: {
     VApp,
+    VAvatar,
     VCard,
     VNavigationDrawer,
     VFooter,
