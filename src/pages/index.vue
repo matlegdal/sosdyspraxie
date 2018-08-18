@@ -66,7 +66,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .section-light {
   background: #f0f0f0;
 }

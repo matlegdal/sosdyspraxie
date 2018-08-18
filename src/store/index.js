@@ -31,6 +31,7 @@ export default () => new Vuex.Store({
   },
   getters: {
     links: state => state.links,
+    toolbarLinks: state => state.links.filter(link => link.toolbar),
   },
   mutations: {
   },

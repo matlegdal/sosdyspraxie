@@ -21,7 +21,12 @@
             v-icon {{ link.icon }}
           v-list-tile-content
             v-list-tile-title {{ link.text }}
-    v-toolbar(color="primary" dark height="72px" style="padding: 12px;")
+    v-toolbar(
+      color="primary"
+      dark
+      height="72px"
+      style="padding: 12px;"
+      )
       v-toolbar-side-icon(@click="sidebarIsOpen = !sidebarIsOpen")
       v-toolbar-items(v-for="(link, index) in toolbarLinks" :key="index")
         nuxt-link.link(:to="link.to")
@@ -47,10 +52,8 @@ export default {
   computed: {
     ...mapGetters([
       'links',
+      'toolbarLinks',
     ]),
-    toolbarLinks() {
-      return this.links.filter(link => link.toolbar);
-    },
   },
 };
 </script>
