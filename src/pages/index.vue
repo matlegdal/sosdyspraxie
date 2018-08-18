@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  v-content
     home-jumbotron
 
     section
@@ -65,3 +65,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.section-light {
+  background: #f0f0f0;
+}
+</style>

@@ -22,9 +22,7 @@
       app)
       v-toolbar-side-icon(@click="sidebarIsOpen = !sidebarIsOpen")
       v-toolbar-title Sos dyspraxie
-    v-content
-      v-container
-        nuxt
+    nuxt
 </template>
 
 <script>

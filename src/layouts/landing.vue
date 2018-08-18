@@ -79,8 +79,4 @@ export default {
   font-weight: 700;
   border-bottom: solid 2px #ffc107;
 }
-
-.section-light {
-  background: #f0f0f0;
-}
 </style>
