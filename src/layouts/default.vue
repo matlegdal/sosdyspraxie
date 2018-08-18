@@ -4,6 +4,8 @@
       v-model="sidebarIsOpen"
       fixed
       app
+      clipped
+      :mobile-break-point="960"
       )
       v-list
         v-list-tile
@@ -24,7 +26,9 @@
     v-toolbar(
       dark
       color="primary"
+      clipped-left
       fixed
+      app
       )
       v-toolbar-side-icon(@click="sidebarIsOpen = !sidebarIsOpen")
       v-toolbar-items(v-for="(link, index) in toolbarLinks" :key="index")
@@ -44,8 +48,7 @@ import { mapGetters } from 'vuex';
 export default {
   data() {
     return {
-      sidebarIsOpen: false,
-      fixed: false,
+      sidebarIsOpen: true,
     };
   },
   computed: {
