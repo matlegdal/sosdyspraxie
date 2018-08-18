@@ -1,10 +1,9 @@
 <template lang="pug">
-  v-content
+  div
     home-jumbotron
-
     section
-      v-container(grid-list-lg)
-        v-layout(justify-center)
+      v-container(grid-list-xl)
+        v-layout.mt-5(justify-center)
           h2.display-1 Des réponses à vos questions
         v-container(fluid)
           v-layout
@@ -15,8 +14,8 @@
             nuxt-link(to="/apprendre")
               v-btn(outline color="accent") Lire plus
     section.section-light
-      v-container(grid-list-lg)
-        v-layout(justify-center)
+      v-container(grid-list-xl)
+        v-layout.mt-5(justify-center)
           h2.display-1 Qu'est-ce que la dyspraxie?
         v-container(fluid)
           v-layout(row wrap align-center)
@@ -30,8 +29,8 @@
             nuxt-link(to="/apprendre")
               v-btn(outline color="accent") Lire plus
     section
-      v-container(grid-list-lg)
-        v-layout(justify-center)
+      v-container(grid-list-xl)
+        v-layout.mt-5(justify-center)
           h2.display-1 Livre à l'intention des parents
         v-container(fluid)
           v-layout(row wrap align-center)

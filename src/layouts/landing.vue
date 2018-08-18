@@ -38,9 +38,14 @@
           img(src="~/static/img/logo.png" style="height: 32px;")
           div Sos Dyspraxie
 
-    nuxt
-    footer(style="background: #343a40;")
-      v-container(grid-list-lg)
+    v-content
+      nuxt
+    footer
+      v-toolbar(
+        flat
+        color="dark"
+        dark
+        )
         v-layout
           v-flex(xs12 text-xs-center)
             .caption.secondary--text © Sosdyspraxie.com 2018. Tous droits réservés.

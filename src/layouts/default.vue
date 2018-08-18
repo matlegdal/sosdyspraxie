@@ -5,13 +5,9 @@
       fixed
       app
       clipped
-      :mobile-break-point="960"
+      :mobile-break-point="600"
       )
       v-list
-        v-list-tile
-          v-list-tile-content
-            v-list-tile-title
-              .title.secondary--text Sos Dyspraxie
         v-list-tile(
           v-for="(link, i) in links"
           :to="link.to"
@@ -39,9 +35,15 @@
         v-layout(align-center)
           img(src="~/static/img/logo.png" style="height: 32px;")
           div Sos Dyspraxie
-    nuxt
-    footer(style="background: #343a40;")
-      v-container(grid-list-lg)
+    v-content
+      nuxt
+    v-footer
+      v-toolbar(
+        flat
+        clipped-left
+        color="dark"
+        dark
+      )
         v-layout
           v-flex(xs12 text-xs-center)
             .caption.secondary--text © Sosdyspraxie.com 2018. Tous droits réservés.
