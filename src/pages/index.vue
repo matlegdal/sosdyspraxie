@@ -1,8 +1,29 @@
 <template lang="pug">
   div
+    v-navigation-drawer(
+      v-model="sidebarIsOpen"
+      fixed
+      app
+      )
+      v-list
+        v-list-tile
+          v-list-tile-content
+            v-list-tile-title
+              .title.secondary--text Sos Dyspraxie
+        v-list-tile(
+          v-for="(item, i) in items"
+          :to="item.to"
+          :key="i"
+          router
+          exact
+        )
+          v-list-tile-action
+            v-icon {{ item.icon }}
+          v-list-tile-content
+            v-list-tile-title {{ item.text }}
     v-toolbar(color="primary" dark height="72px" style="padding: 12px;")
-      v-toolbar-side-icon
-      v-toolbar-items(v-for="(item, index) in items" :key="index")
+      v-toolbar-side-icon(@click="sidebarIsOpen = !sidebarIsOpen")
+      v-toolbar-items(v-for="(item, index) in toolbarLinks" :key="index")
         nuxt-link.link(:to="item.to")
           .link-content {{ item.text }}
       v-spacer
@@ -76,17 +97,39 @@ export default {
   },
   data() {
     return {
+      sidebarIsOpen: false,
       items: [
         {
           text: 'Accueil',
           to: '/',
+          icon: 'home',
+          toolbar: true,
         },
         {
           text: 'Apprendre',
           to: '/apprendre',
+          icon: 'school',
+          toolbar: true,
+        },
+        {
+          text: 'Livre',
+          to: '/livre',
+          icon: 'shopping_cart',
+          toolbar: true,
+        },
+        {
+          text: 'Contact',
+          to: '/contact',
+          icon: 'mail',
+          toolbar: false,
         },
       ],
     };
+  },
+  computed: {
+    toolbarLinks() {
+      return this.items.filter(item => item.toolbar);
+    },
   },
 };
 </script>
