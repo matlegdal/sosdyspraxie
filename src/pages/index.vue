@@ -12,6 +12,7 @@
           div Sos Dyspraxie
 
     home-jumbotron
+
     section
       v-container(grid-list-lg)
         v-layout(justify-center)
@@ -20,6 +21,10 @@
           v-layout
             v-flex
               p Sos Dyspraxie est destiné aux parents et enseignants d'enfants dyspraxiques. Il apporte des réponses simples et professionnelles aux questions les plus courantes.
+        v-container(fluid)
+          v-layout(justify-center)
+            nuxt-link(to="/apprendre")
+              v-btn(outline color="accent") Lire plus
     section.section-light
       v-container(grid-list-lg)
         v-layout(justify-center)
@@ -31,11 +36,14 @@
             v-flex(xs12 sm6)
               p Ils signifient la présence chez l'enfant d'un trouble neurodéveloppemental qui affecte sa capacité à planifier, organiser et automatiser les gestes moteurs pour réaliser une action ou une activité.
               p On parle alors de dyspraxie motrice, de dyspraxie développementale ou de trouble de l'acquisition de la coordination (traduction du terme anglais Developemental Coordination Disorder ou DCD).
+        v-container(fluid)
+          v-layout(justify-center)
+            nuxt-link(to="/apprendre")
+              v-btn(outline color="accent") Lire plus
     section
       v-container(grid-list-lg)
         v-layout(justify-center)
-          v-flex(xs12)
-            h2.display-1 Livre à l'intention des parents
+          h2.display-1 Livre à l'intention des parents
         v-container(fluid)
           v-layout(row wrap align-center)
             v-flex(xs12 sm6)
@@ -44,7 +52,12 @@
                 strong  La Dyspraxie de l'enfant: vos Grandes Questions, nos Meilleures Réponses
                 span  est une référence parfaite pour vous.
             v-flex(xs12 sm6 text-xs-center)
-              img(src="~/static/img/livre.jpg" style="height: 50vh;")
+              img(src="~/static/img/livre.jpg" style="height: 350px;")
+        v-container(fluid)
+          v-layout(justify-center)
+            nuxt-link(to="/livre")
+              v-btn(outline color="accent") Lire plus
+
     footer(style="background: #343a40;")
       v-container(grid-list-lg)
         v-layout
