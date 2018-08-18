@@ -7,16 +7,16 @@
       )
       v-list
         v-list-tile(
-          v-for="(item, i) in items"
-          :to="item.to"
+          v-for="(link, i) in links"
+          :to="link.to"
           :key="i"
           router
           exact
         )
           v-list-tile-action
-            v-icon {{ item.icon }}
+            v-icon {{ link.icon }}
           v-list-tile-content
-            v-list-tile-title {{ item.title }}
+            v-list-tile-title {{ link.text }}
     v-toolbar(
       fixed
       app)
@@ -28,16 +28,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 
 export default {
   data() {
     return {
       sidebarIsOpen: false,
-      items: [
-        { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-      ],
     };
+  },
+  computed: {
+    ...mapGetters([
+      'links',
+    ]),
   },
 };
 </script>

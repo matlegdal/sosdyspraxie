@@ -2,14 +2,36 @@ import Vuex from 'vuex';
 
 export default () => new Vuex.Store({
   state: {
-    sidebarIsOpen: false,
+    links: [
+      {
+        text: 'Accueil',
+        to: '/',
+        icon: 'home',
+        toolbar: true,
+      },
+      {
+        text: 'Apprendre',
+        to: '/apprendre',
+        icon: 'school',
+        toolbar: true,
+      },
+      {
+        text: 'Livre',
+        to: '/livre',
+        icon: 'shopping_cart',
+        toolbar: true,
+      },
+      {
+        text: 'Contact',
+        to: '/contact',
+        icon: 'mail',
+        toolbar: false,
+      },
+    ],
   },
   getters: {
-    sidebarIsOpen: state => state.sidebarIsOpen,
+    links: state => state.links,
   },
   mutations: {
-    toggleSidebar(state) {
-      state.sidebarIsOpen = !state.sidebarIsOpen;
-    },
   },
 });
