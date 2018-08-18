@@ -47,12 +47,6 @@
             nuxt-link(to="/livre")
               v-btn(outline color="accent") Lire plus
 
-    footer(style="background: #343a40;")
-      v-container(grid-list-lg)
-        v-layout
-          v-flex(xs12 text-xs-center)
-            .caption.secondary--text © Sosdyspraxie.com 2018. Tous droits réservés.
-
  </template>
 
 <script>

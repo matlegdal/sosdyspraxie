@@ -4,6 +4,7 @@
       v-model="sidebarIsOpen"
       fixed
       app
+      temporary
       )
       v-list
         v-list-tile
@@ -38,6 +39,11 @@
           div Sos Dyspraxie
 
     nuxt
+    footer(style="background: #343a40;")
+      v-container(grid-list-lg)
+        v-layout
+          v-flex(xs12 text-xs-center)
+            .caption.secondary--text © Sosdyspraxie.com 2018. Tous droits réservés.
 </template>
 
 <script>
