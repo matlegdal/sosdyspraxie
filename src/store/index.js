@@ -14,6 +14,16 @@ export default () => new Vuex.Store({
         to: '/apprendre',
         icon: 'school',
         toolbar: true,
+        children: [
+          {
+            text: 'Diagnostic',
+            to: '/diagnostic',
+          },
+          {
+            text: 'Parents',
+            to: '/parents',
+          },
+        ],
       },
       {
         text: 'Livre',

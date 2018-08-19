@@ -2,10 +2,10 @@
   v-app
     v-navigation-drawer(
       v-model="sidebarIsOpen"
+      :mobile-break-point="600"
       fixed
       app
       clipped
-      :mobile-break-point="600"
       )
       v-list
         v-list-tile(
@@ -19,6 +19,7 @@
             v-icon {{ link.icon }}
           v-list-tile-content
             v-list-tile-title {{ link.text }}
+
     v-toolbar(
       dark
       color="primary"
